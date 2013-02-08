@@ -49,7 +49,7 @@ module Beaver
 
       # Returns the request parameters as a Hash (this is more expensive than Request#params_str)
       def params
-        @params = params_str.empty? ? BLANK_HASH : Utils.str_to_hash(params_str)
+        @params = params_str.empty? ? BLANK_HASH : eval(params_str)
       end
 
       # Returns the tags string associated with the request (e.g. "[tag1] [tag2] ")
