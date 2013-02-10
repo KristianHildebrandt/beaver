@@ -8,7 +8,7 @@ module Beaver
       REGEX_CONTROLLER = /Processing by (\w+Controller)#/ # :nodoc:
       REGEX_ACTION = /Processing by \w+Controller#(\w+) as/ # :nodoc:
       REGEX_COMPLETED = /Completed (\d+)/ # :nodoc:
-      REGEX_PATH = /^Started \w{3,4} "([^"]+)"/ # :nodoc:
+      REGEX_PATH = /^Started \w{3,6} "([^"]+)"/ # :nodoc:
       REGEX_PARAMS_STR = /  Parameters: (\{.+\})$/ # :nodoc:
       REGEX_IP = /" for ([a-zA-Z0-9:.]+) at / # :nodoc:
       REGEX_FORMAT = /Processing by .+ as (\w+)$/ # :nodoc:
